@@ -417,7 +417,7 @@ footer p{
 @media screen and (max-width: 900px){
 	main{
 		display: flex;
-		flex-direction: column;
+		flex-direction: column-reverse;
 		background-color: #FFF8ED;
 	 }
 
@@ -433,9 +433,12 @@ footer p{
 		align-items: center;
 	}
 
-	
 	.textos-sintomas{
 		width: 80%;
+	}
+
+	#img-sintomas{
+		margin-bottom: 30px;
 	}
 	
 	#curiosidades{
@@ -475,4 +478,10 @@ footer p{
 		box-shadow: 5px 5px 5px rgb(156, 153, 153);
 	}
 	
+}
+
+@media screen and (max-width: 629px){
+
+
+
 }
