@@ -650,7 +650,6 @@ footer p{
 		display: block;
 		background-color: #FFF8ED;
 		width: 100%;
-		z-index: 1;
 		position: fixed;
 	}
 
@@ -695,6 +694,7 @@ footer p{
 
 	#containerMenuMobile{
 		width: 100%;
+		display: none;
 	}
 
 	.menuMobile{
@@ -717,7 +717,7 @@ footer p{
 	}
 	
 	header{
-		border-top: .3pt solid #000;
+		padding-top: 102px;
 	}
 
 	#texto-main{
@@ -742,11 +742,6 @@ footer p{
 
 	#sintomas h1{
 		font-size: 2.5rem;
-	}
-
-	header{
-		position: relative;
-		top: 102px;
 	}
 
 	#sintomas p, li{
