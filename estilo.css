@@ -8,6 +8,9 @@
 #navDesktop{
     background-color: #FFF8ED;
     height: 80px;
+	width: 100%;
+	z-index: 1;
+	position: fixed;
 }
 
 #conjunto-menu{
@@ -87,14 +90,11 @@ header, #banner{
 }
 
 #perfil{
-	height: 700px;
-    padding: 50px;
-    box-sizing: border-box;
+	height: 500px;
+	padding-left: 25px;
 }
 
 #texto-main{
-    box-sizing: border-box;
-    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -112,6 +112,7 @@ main p{
 	font-size: 1.4rem;
     padding: 30px;
     text-align: justify;
+	text-indent: 25px;
  }
 
  #sintomas{
@@ -137,6 +138,7 @@ main p{
 	font-size: 1.4rem;
     padding: 20px;
     text-align: justify;
+	text-indent: 25px;
 }
 
 ul{
@@ -311,6 +313,7 @@ ul{
 	font-size: 1.2rem;
     padding: 30px;
     text-align: justify;
+	text-indent: 25px;
  }
 
 #locais_atendimento{
@@ -344,6 +347,7 @@ ul{
 
 .container-iframe{
 	box-shadow: 5px 5px 5px rgb(156, 153, 153);
+	width: 500px;
 }
 
 .contato{
@@ -419,14 +423,12 @@ footer p{
 }
 
 
-/*responsividade */
+/*responsividade -------------------------------------------------------------------------*/
 
 @media screen and (max-width: 1230px){
 
 	#perfil{
 		height: 600px;
-		padding: 25x;
-		box-sizing: border-box;
 	}
 
 	.local{
@@ -487,7 +489,118 @@ footer p{
 	#img-sintomas{
 		margin-bottom: 30px;
 	}
+
+	.txt-artrite{
+		width: 280px;
+		height: 194px;
+		border-radius: 40px 0 0 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #E1B97D;
+	}
 	
+	.txt-artrite p{
+		color: white;
+		text-indent: 20px;
+		padding: 20px;
+		text-align: justify;
+		font-family: 'Roboto',sans-serif;
+		line-height: 1.2;
+		font-size: .9rem;
+	}
+	
+	.txt-artrite h3{
+		color: white;
+		font-family: 'Roboto',sans-serif;
+		padding-top: 10px;
+	}
+	
+	.img-artrite{
+		width: 280px;
+		height: 194px;
+		border-radius: 0 40px 40px 0;
+	}
+	
+	.container-lupus{
+		margin: 30px 0 20px 0;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.img-lupus{
+		border-radius: 40px 0  0 40px;
+		width: 279px;
+		height: 203px;
+	}
+	
+	.txt-lupus{
+		width: 279px;
+		height: 203px;
+		border-radius: 0 40px 40px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #E1B97D;
+	}
+	
+	.txt-lupus p{
+		color: white;
+		text-indent: 20px;
+		padding: 20px;
+		text-align: justify;
+		font-family: 'Roboto',sans-serif;
+		line-height: 1.7;
+		font-size: .9rem;
+	}
+	
+	.txt-lupus h3{
+		color: white;
+		font-family: 'Roboto',sans-serif;
+		padding-top: 10px;
+	
+	}
+	
+	.container-fibro{
+		padding-bottom: 50px;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.txt-fibro{
+		width: 280px;
+		height: 186px;
+		border-radius: 40px 0 0 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: #E1B97D;
+	}
+	
+	.txt-fibro p{
+		color: white;
+		text-indent: 20px;
+		padding: 20px;
+		text-align: justify;
+		font-family: 'Roboto',sans-serif;
+		line-height: 1.6;
+		font-size: .9rem;
+	}
+	
+	.txt-fibro h3{
+		color: white;
+		font-family: 'Roboto',sans-serif;
+		padding-top: 10px;
+	
+	}
+	
+	.img-fibro{
+		width: 280px;
+		height: 186px;
+		border-radius: 0 40px 40px 0;
+	}
+	
+
 	#curiosidades{
 		background-color: #FFEDD2;
 		display: grid;
@@ -536,6 +649,9 @@ footer p{
 	#navMobile{
 		display: block;
 		background-color: #FFF8ED;
+		width: 100%;
+		z-index: 1;
+		position: fixed;
 	}
 
 	#menu-logo-burguer{
@@ -543,6 +659,7 @@ footer p{
 		justify-content: space-between;
 		align-items: center;
 		height: 80px;
+
 	}
 
 	#img-logo{
@@ -584,7 +701,7 @@ footer p{
 		width: 100%;
 		text-align: center;
 		font-family: 'Roboto',sans-serif;
-	    font-size: .65rem;
+	    font-size: .75rem;
 		font-weight: bold;
 		border-top: .3pt solid #000;
 		padding: 2.5px;
@@ -603,8 +720,37 @@ footer p{
 		border-top: .3pt solid #000;
 	}
 
+	#texto-main{
+		padding: 0px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
 	#perfil{
-		height: 600px;
+		height: 500px;
+		padding-bottom: 30px;
+	}
+
+	h1{
+		font-size: 2.7rem;
+	}
+
+	#texto-main p{
+		font-size: 1rem;
+	}
+
+	#sintomas h1{
+		font-size: 2.5rem;
+	}
+
+	header{
+		position: relative;
+		top: 102px;
+	}
+
+	#sintomas p, li{
+		font-size: 1rem;
 	}
 
 	#img-sintomas{
@@ -613,65 +759,119 @@ footer p{
     	border: 3px solid #CC905E;
 	}
 
-	#doencas{
+	.container-artrite{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.container-doencas{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin-bottom: 100px;
-	}
-	
-	.imgdireito{
-		width: 350px;
-		height: 243px;
-		background-color: #DDD;
-		border-radius: 40px;
-	}
-	
-	
-	.txt-doencas{
-		width: 350px;
-		height: 243px;
-		background-color: #E1B97D;
-		border-radius: 40px;
-		padding: 0 10px 0 10px;
-		display: flex;
-	}
-
-
-
-	.imgsecao2inverso, .imginverso{
-		width: 350px;
-		height: 255px;
-		background-color: #DDD;
+	.txt-artrite, .img-artrite{
 		border-radius: 40px;
 	}
 
-	.txt-doencas-inverso{
-		width: 350px;
-		height: 255px;
-		background-color: #E1B97D;
-		border-radius: 40px;
-		padding: 0 10px 0 10px;
-		justify-content: center;
-		margin-bottom: 5px;
-	}
-
-	.img-doencas{
-		width: 350px;
-		height: 245px;
-		border-radius: 40px;
-	}
-
-	#container-doencas2{
+	.container-lupus{
 		display: flex;
 		flex-direction: column-reverse;
-		justify-items: center;
+		align-items: center;
+	}
+
+	.txt-lupus, .img-lupus{
+		border-radius: 40px;
+	}
+
+	.container-fibro{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.txt-fibro, .img-fibro{
+		border-radius: 40px;
+	}
+
+	#curiosidades{
+		display: none;
+	}
+
+	#locais_atendimento{
+		background-color: #FFEDD2;
+		margin: 0;
+		padding: 0;
+	}
+
+	.local{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+	}
+
+	#locais_atendimento h1{
+		font-size: 2.7rem;
+		margin-bottom: 0;
+		padding: 15px;
+	}
+
+	.contato{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: space-evenly;
+		width: 300px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.container-iframe{
+		display: flex;
+		justify-items: flex-start;
+		margin-top: 35px;
+	}
+
+	iframe, .container-iframe{
+		width: 300px;
+	}
+
+	.localizacao{
+		width: 60%;
+	}
+
+	.endereco{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding: 0;
+		margin: 0;
+	}
+
+	.endereco p{
+		font-size: .9rem;
+	}
+
+	.end-resultado{
+		padding: 0;
+		margin: 0;
+	}
+
+	.contato p{
+		font-size: 1rem;
+	}
+
+	.contato h4{
+		display: none;
+	}
+
+	footer{
+		background-color: #FFF8ED;
+	}
+
+	#WhatsVerde{
+		width:40px;
+		z-index: 1;
+		position: fixed;
+		bottom: 40px;
+		right: 30px;
 	}
 
 }
