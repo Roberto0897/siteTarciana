@@ -11,7 +11,7 @@
 
     <body>
         <section id="container-externo">
-            <nav>
+            <nav id="navDesktop">
                 <div id="conjunto-menu">
                     <div id="logo-menu">
                         <img id="img-logo" src="img/logo.png" alt="imagem de logo com os carcteres T e S">
@@ -22,6 +22,24 @@
                         <a class="menu" href="#sobre-mim">SOBRE MIM<a/> 
                         <a class="menu" href="#locais_atendimento">CONTATOS<a/> 
                         <a class="a-menu" href="#">AGENDAR CONSULTA<a/>
+                    </div>
+                </div>
+            </nav>
+
+            <nav id="navMobile">
+                <div id="conjunto-menu-mobile">
+                    <div id="menu-logo-burguer">
+                        <img id="img-logo" src="img/logo.png" alt="imagem de logo com os carcteres T e S">
+                    </div>
+                        
+                    <div id="menu-nav-mobile">
+                        <a id="burguer" onclick="mostrarMenu()"><img id="img-burguer" src="/img/icons8-cardápio-96.png" alt=""></a>
+                        <div id="containerMenuMobile">
+                            <a class="menuMobile" href="#">INÍCIO<a/> 
+                            <a class="menuMobile" href="#sobre-mim">SOBRE MIM<a/> 
+                            <a class="menuMobile" href="#locais_atendimento">CONTATOS<a/> 
+                            <a class="menuMobile" href="#">AGENDAR CONSULTA<a/>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -96,7 +114,7 @@
                         <img class="imginverso" src="img/lupus.jpeg" alt="pessoa com manchas vermelhas no rosto">
                     </div>
                 </div>
-                <div class="container-doencas">
+                <div class="container-doencas2">
                     <div class="img-doencas">
                         <img class="imgdireito" src="img/fibromialgia.jpeg" alt="pessoa com dores nas costas">
                     </div>
@@ -181,4 +199,7 @@
             <img id="WhatsVerde"src="img/WhatsVerde.png"></a>
             
         </section>
+
+        <script src="script.js"></script>
+
     </body>
